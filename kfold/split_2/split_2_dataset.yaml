@@ -1,0 +1,6 @@
+names:
+- roundabout
+- intersection
+path: /home/ubuntu/thesis-Intersection/yolo/data/kfold/split_2
+train: train
+val: val

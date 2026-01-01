@@ -1,0 +1,192 @@
+============================================================
+COMPREHENSIVE DATASET ANALYSIS
+============================================================
+
+1. DATA SCHEMA ANALYSIS
+------------------------------
+Data (1884 files):
+Schema for: /home/ubuntu/thesis-Intersection/yolo/data
+- data.yaml
+- data_split.py
+- dataset_preview.py
+- test/ (283 files)
+    └─ images/ (146 files)
+    └─ labels/ (136 files)
+- train/ (1315 files)
+    └─ images/ (679 files)
+    └─ labels/ (634 files)
+- val/ (283 files)
+    └─ images/ (145 files)
+    └─ labels/ (137 files)
+
+Train set analysis:
+  Images: 678
+  Labels: 634
+  Annotated images: 634
+  Unannotated images: 44
+
+Validation set analysis:
+  Images: 145
+  Labels: 137
+  Annotated images: 137
+  Unannotated images: 8
+
+Test set analysis:
+  Images: 146
+  Labels: 136
+  Annotated images: 136
+  Unannotated images: 10
+
+Overall statistics:
+Images with annotations: 907
+Background without annotations: 62
+
+2. IMAGE FILE SIZE ANALYSIS
+------------------------------
+File size statistics (KB):
+  Min: 68
+  Max: 599
+  Average: 182
+  Total files analyzed: 969
+
+3. DATA INSTANCES ANALYSIS
+------------------------------
+
+Statistics of instances per class for each subfolder:
+--------------------------------------------------
+
+TRAIN:
+  roundabout: 402
+  intersection: 540
+  Total: 942
+
+VAL:
+  roundabout: 89
+  intersection: 112
+  Total: 201
+
+TEST:
+  roundabout: 94
+  intersection: 118
+  Total: 212
+
+==================================================
+OVERALL:
+  roundabout: 585
+  intersection: 770
+  Total: 1355
+
+4. BOUNDING BOX ANALYSIS
+------------------------------
+
+=== BOUNDING BOX ANALYSIS ===
+Total bounding boxes: 1355
+Class distribution:
+  Roundabout (0): 585 (43.2%)
+  Intersection (1): 770 (56.8%)
+
+Bounding Box Width (normalized):
+  Mean: 0.298 ± 0.193
+  Range: 0.013 - 0.908
+  Median: 0.256
+
+Bounding Box Height (normalized):
+  Mean: 0.330 ± 0.214
+  Range: 0.026 - 0.950
+  Median: 0.279
+
+Bounding Box Area (normalized):
+  Mean: 0.128 ± 0.147
+  Range: 0.002 - 0.593
+  Median: 0.067
+
+Aspect Ratio (width/height):
+  Mean: 1.041 ± 0.627
+  Range: 0.082 - 5.031
+  Median: 0.861
+
+=== PER-SPLIT BBOX STATISTICS ===
+
+TRAIN set:
+  Total boxes: 942
+  Roundabout: 402
+  Intersection: 540
+  Avg aspect ratio: 1.055
+
+VAL set:
+  Total boxes: 201
+  Roundabout: 89
+  Intersection: 112
+  Avg aspect ratio: 1.016
+
+TEST set:
+  Total boxes: 212
+  Roundabout: 94
+  Intersection: 118
+  Avg aspect ratio: 1.001
+
+5. DATASET SUMMARY FOR LATEX TABLES
+----------------------------------------
+
+=== DATASET OVERVIEW TABLE DATA ===
+Total images: 969
+Total annotations: 1,355
+Classes: 2 (Roundabout, Intersection)
+Image format: JPEG
+Annotation format: YOLO (normalized coordinates)
+Original resolution: 960 × 640 pixels
+Training resolution: 640 × 640 pixels (resized)
+Aspect ratio: 3:2 (1.5:1)
+Color space: RGB
+Compression: Variable quality
+File size (KB): Min: 68, Max: 599, Avg: 182
+Dataset type: Object Detection
+
+=== BOUNDING BOX STATISTICS TABLE DATA ===
+Width (normalized):
+  Mean ± Std: 0.298 ± 0.193
+  Median: 0.256
+  Range: 0.013 - 0.908
+Height (normalized):
+  Mean ± Std: 0.330 ± 0.214
+  Median: 0.279
+  Range: 0.026 - 0.950
+Area (normalized):
+  Mean ± Std: 0.128 ± 0.147
+  Median: 0.067
+  Range: 0.002 - 0.593
+Aspect Ratio (width/height):
+  Mean ± Std: 1.041 ± 0.627
+  Median: 0.861
+  Range: 0.082 - 5.031
+
+=== CLASS DISTRIBUTION TABLE DATA ===
+Intersection: 770 instances (56.8%)
+Roundabout: 585 instances (43.2%)
+Total: 1,355 instances (100.0%)
+
+=== DATA SPLIT DISTRIBUTION TABLE DATA ===
+Training split:
+  Images: 678 (70.0%)
+  Intersections: 540 (70.1%)
+  Roundabouts: 402 (68.7%)
+  Total instances: 942 (69.5%)
+Validation split:
+  Images: 145 (15.0%)
+  Intersections: 112 (14.5%)
+  Roundabouts: 89 (15.2%)
+  Total instances: 201 (14.8%)
+Testing split:
+  Images: 146 (15.1%)
+  Intersections: 118 (15.3%)
+  Roundabouts: 94 (16.1%)
+  Total instances: 212 (15.6%)
+Total:
+  Images: 969 (100%)
+  Intersections: 770 (100%)
+  Roundabouts: 585 (100%)
+  Total instances: 1,355 (100%)
+
+============================================================
+COMPREHENSIVE ANALYSIS COMPLETE
+============================================================

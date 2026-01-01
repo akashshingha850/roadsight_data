@@ -1,0 +1,10 @@
+train: ./train
+val: ./val
+test: ./test
+nc: 2
+names: ["roundabout", "intersection"]
+# Class weights calculated from inverse frequency
+# roundabout: 1355/585 = 2.32, intersection: 1355/770 = 1.76
+# Normalized: roundabout: 1.32, intersection: 1.0
+cls: [1.32, 1.0]
+

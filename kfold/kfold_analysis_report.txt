@@ -1,0 +1,56 @@
+K-FOLD CROSS-VALIDATION ANALYSIS REPORT
+==================================================
+
+MERGED DATA POOL ANALYSIS
+------------------------------
+Total annotated images: 907
+Total instances: 1355
+Class distribution:
+  roundabout (class 0): 585 instances (43.2%)
+  intersection (class 1): 770 instances (56.8%)
+
+Images containing each class:
+  roundabout: 585 images (64.5%)
+  intersection: 551 images (60.7%)
+Images with multiple classes: 229 (25.2%)
+
+K-FOLD SPLIT ANALYSIS
+-------------------------
+
+Fold 1:
+  Train: 725 images, 1074 instances
+  Val: 182 images, 281 instances
+    roundabout - Train: 474 (44.1%), Val: 111 (39.5%)
+    intersection - Train: 600 (55.9%), Val: 170 (60.5%)
+
+Fold 2:
+  Train: 725 images, 1102 instances
+  Val: 182 images, 253 instances
+    roundabout - Train: 466 (42.3%), Val: 119 (47.0%)
+    intersection - Train: 636 (57.7%), Val: 134 (53.0%)
+
+Fold 3:
+  Train: 726 images, 1096 instances
+  Val: 181 images, 259 instances
+    roundabout - Train: 464 (42.3%), Val: 121 (46.7%)
+    intersection - Train: 632 (57.7%), Val: 138 (53.3%)
+
+Fold 4:
+  Train: 726 images, 1087 instances
+  Val: 181 images, 268 instances
+    roundabout - Train: 479 (44.1%), Val: 106 (39.6%)
+    intersection - Train: 608 (55.9%), Val: 162 (60.4%)
+
+Fold 5:
+  Train: 726 images, 1061 instances
+  Val: 181 images, 294 instances
+    roundabout - Train: 457 (43.1%), Val: 128 (43.5%)
+    intersection - Train: 604 (56.9%), Val: 166 (56.5%)
+
+SUMMARY STATISTICS
+--------------------
+Average validation images per fold: 181.4 ± 0.5
+Validation images range: 181 - 182
+Average validation instances per fold: 271.0 ± 16.6
+Average roundabout val instances: 117.0 ± 8.6
+Average intersection val instances: 154.0 ± 16.7
